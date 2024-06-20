@@ -1,0 +1,158 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.table-container,
+.form-container {
+    margin-bottom: 20px;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Estilos específicos para las columnas */
+td.stock,
+td.gastado {
+    font-weight: bold; /* Texto en negrita */
+}
+
+td.stock {
+    color: #007bff; /* Azul para stock */
+}
+
+td.gastado {
+    color: #dc3545; /* Vino para gastado */
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+form label {
+    margin-bottom: 8px;
+    color: #000; /* Texto negro */
+    font-size: 16px;
+    font-weight: bold; /* Texto en negrita */
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ced4da; /* Color de borde más claro */
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    font-size: 16px;
+    color: #000; /* Texto en color negro */
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+    outline: none;
+    border-color: #007bff; /* Color de borde al enfocar */
+}
+
+/* Estilos específicos para el botón "Agregar Insumo" */
+form button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #17a2b8; /* Turquesa */
+    color: #fff; /* Texto blanco */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+form button[type="submit"]:hover {
+    background-color: #138496; /* Turquesa más oscuro al pasar el cursor */
+}
+
+/* Estilos para el botón "Finalizar Día" */
+#finalizar-dia-btn {
+    padding: 12px 20px;
+    background-color: #007bff; /* Azul */
+    color: #fff; /* Texto blanco */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#finalizar-dia-btn:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
+}
+
+/* Estilos para mensajes de error */
+.error-message {
+    color: #dc3545; /* Vino */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Estilos para botón eliminar */
+.eliminar-btn {
+    padding: 8px 16px;
+    background-color: #dc3545; /* Vino */
+    color: #fff; /* Texto blanco */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.eliminar-btn:hover {
+    background-color: #c82333; /* Vino más oscuro al pasar el cursor */
+}
